@@ -97,9 +97,6 @@ export default function DrawVideoPage() {
             >
                 Submit My Picture
             </button>
-
-
-
         </div>
     );
 }

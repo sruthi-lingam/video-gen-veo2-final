@@ -19,7 +19,7 @@ export default function CreateVideo() {
     return (
         <div style={{
             padding: '2rem',
-            textAlign: 'right', //change to right later
+            textAlign: 'center',
             color: 'white',
             minHeight: '100vh',
             backgroundColor: '#111',
