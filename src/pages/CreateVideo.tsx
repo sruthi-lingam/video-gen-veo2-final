@@ -73,21 +73,6 @@ export default function CreateVideo() {
                 >
                     I Need Ideas 💡
                 </button>
-
-                <button
-                    onClick={() => navigate('/draw')}
-                    style={{
-                        padding: '0.75rem 1.5rem',
-                        backgroundColor: '#333',
-                        color: 'white',
-                        border: 'none',
-                        borderRadius: '0.5rem',
-                        fontSize: '1rem',
-                        cursor: 'pointer'
-                    }}
-                >
-                    ✏️ Draw My Video
-                </button>
             </div>
         </div>
     );

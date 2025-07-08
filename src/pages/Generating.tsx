@@ -1,39 +1,24 @@
-import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export default function Generating() {
     const location = useLocation();
     const navigate = useNavigate();
-    const prompt = location.state?.prompt;
+    const videoUrl = location.state?.videoUrl;
 
     useEffect(() => {
-        if (!prompt) {
+        if (!videoUrl) {
+            // If no videoUrl, redirect to home (fallback)
             navigate('/');
-            return;
+        } else {
+            // If videoUrl was passed in, navigate after brief delay (optional)
+            const timer = setTimeout(() => {
+                navigate('/video', { state: { videoUrl } });
+            }, 1000); // optional delay to show the "Generating" screen briefly
+
+            return () => clearTimeout(timer);
         }
-
-        const generateVideo = async () => {
-            try {
-                const res = await fetch('http://localhost:3001/api/generate', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ prompt })
-                });
-
-                const data = await res.json();
-                if (data.videoUrl) {
-                    navigate('/video', { state: { videoUrl: data.videoUrl } });
-                } else {
-                    alert('Video generation failed.');
-                }
-            } catch (error) {
-                console.error('Error generating video:', error);
-                alert('Something went wrong.');
-            }
-        };
-
-        generateVideo();
-    }, [prompt, navigate]);
+    }, [videoUrl, navigate]);
 
     return (
         <div style={{
