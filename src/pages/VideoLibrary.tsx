@@ -26,7 +26,7 @@ export default function VideoLibrary() {
     return (
         <div style={{ padding: '2rem', position: 'relative' }}>
             <BackButton />
-            <h1>🎞️ Video Gallery</h1>
+            <h1>Video Gallery</h1>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1rem' }}>
                 {videoData.map(v => (
                     <div

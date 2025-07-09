@@ -5,6 +5,7 @@ import CreateVideo from './pages/CreateVideo';
 import Generating from './pages/Generating';
 import VideoPlayer from './pages/VideoPlayer';
 import VideoLibrary from './pages/VideoLibrary';
+import PromptIdeas from "./pages/PromptIdeas";
 
 export default function App() {
     return (
@@ -15,6 +16,8 @@ export default function App() {
             <Route path="/generating" element={<Generating />} />
             <Route path="/video" element={<VideoPlayer />} />
             <Route path="/library" element={<VideoLibrary />} />
+            <Route path="/ideas" element={<PromptIdeas />} />
+
         </Routes>
     );
 }

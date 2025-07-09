@@ -27,7 +27,7 @@ export default function CreateVideo() {
             position: 'relative'
         }}>
             <BackButton />
-            <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>Describe your Video</h2>
+            <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>Describe Your Video</h2>
 
             <input
                 value={prompt}
@@ -61,6 +61,7 @@ export default function CreateVideo() {
                 </button>
 
                 <button
+                    onClick={() => navigate('/ideas')}
                     style={{
                         padding: '0.75rem 1.5rem',
                         backgroundColor: '#333',
