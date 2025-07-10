@@ -3,13 +3,13 @@ Author: Sruthi Lingam
 
 Last Updated: July 10, 2025
 
-This is a fully interactive web app built to demonstrate how users, specifically children visiting Discovery Place, can generate short AI videos using **Google’s Vertex AI Veo 2 model**. Designed with an **iPad interface in mind**, the app offers a fun and simple user experience that invites creativity through both **text** and **drawn image** inputs.
+This is a fully interactive web app built to demonstrate how users, specifically children visiting Discovery Place, can generate short AI videos using **Google’s Vertex AI Veo 2 model**. Designed with an iPad interface in mind, the app offers a fun and simple user experience that invites creativity through both text and drawn image prompts.
 
 ---
 
 ## Target Use Case
 
-This app was designed as a prototype for a **video generation exhibit** at the Discovery Place kids museum. When visitors approach the iPad station, they can:
+This app was designed as a prototype for a video generation exhibit at the Discovery Place kids museum. When visitors approach the iPad station, they can:
 - View example videos
 - Get prompt inspiration
 - Create their own AI-generated video using text or a drawing
