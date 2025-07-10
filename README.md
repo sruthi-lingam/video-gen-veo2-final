@@ -60,11 +60,11 @@ Once ready, the user is redirected to the video player to watch their custom-gen
 - React + TypeScript
 - React Router
 - HTML Canvas API
-- Inline styles + responsive layout
 
 ### Backend
 - Node.js + Express
-- Python scripts for Veo 2 API calls
+- Python scripts for API calls
+- Vertex AI API for Veo 2
 - Google Cloud Storage (GCS) for images + video access
 
 ---
@@ -83,7 +83,7 @@ node server.js
 Open a new terminal tab or window and:
 ```bash
 cd ..
-npm install     # Only needed the first time
+npm install
 npm run dev
 ```
 ### Requirements
