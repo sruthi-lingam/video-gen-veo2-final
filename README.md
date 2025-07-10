@@ -87,7 +87,7 @@ npm install
 npm run dev
 ```
 ### Requirements
-Node.js v16+
-Python 3.10+
-Access to Google Cloud Project with Vertex AI enabled
-GOOGLE_APPLICATION_CREDENTIALS environment variable set
+- Node.js v16+
+- Python 3.10+
+- Access to Google Cloud Project with Vertex AI enabled
+- GOOGLE_APPLICATION_CREDENTIALS environment variable set
