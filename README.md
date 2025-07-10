@@ -69,21 +69,6 @@ Once ready, the user is redirected to the video player to watch their custom-gen
 
 ---
 
-## Project Structure
-video-gen-ui-final/
-├── src/ # React frontend
-│ ├── pages/
-│ ├── components/
-│ └── App.tsx
-├── public/
-├── veo-server/ # Backend server + Python scripts
-│ ├── server.js
-│ ├── generate_video.py
-│ └── generate_video_from_image.py
-├── package.json
-└── README.md
-
----
 ## How to Run the App
 
 > Before running, make sure you have Python 3, Node.js, and Google Cloud credentials set up locally.
