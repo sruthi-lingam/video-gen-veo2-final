@@ -1,5 +1,5 @@
 # Veo 2 AI Video Generation App
-Author: Sruthi Lingam
+Author: Sruthi Lingam\n
 Last Updated: July 10, 2025
 
 This is a fully interactive web app built to demonstrate how users, specifically children visiting Discovery Place, can generate short AI videos using **Google’s Vertex AI Veo 2 model**. Designed with an **iPad interface in mind**, the app offers a fun and simple user experience that invites creativity through both **text** and **drawn image** inputs.
