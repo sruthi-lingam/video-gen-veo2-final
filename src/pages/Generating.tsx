@@ -20,8 +20,6 @@ export default function Generating() {
 
     const [currentFactIndex, setCurrentFactIndex] = useState(0);
     const hasGenerated = useRef(false);
-
-    // Rotate fun facts every 2 seconds
     useEffect(() => {
         const factTimer = setInterval(() => {
             setCurrentFactIndex(prev => (prev + 1) % funFacts.length);
@@ -30,7 +28,6 @@ export default function Generating() {
         return () => clearInterval(factTimer);
     }, []);
 
-    // Handle prompt-based generation (call backend)
     useEffect(() => {
         if (hasGenerated.current) return;
 
@@ -53,7 +50,7 @@ export default function Generating() {
                         navigate('/');
                     }
                 } catch (err) {
-                    console.error('❌ Error generating video:', err);
+                    console.error('Error generating video:', err);
                     alert('Something went wrong.');
                     navigate('/');
                 }
